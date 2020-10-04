@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Melhor Música</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/2x/star.png" />
+<Style>
+    *{
+             box-sizing: border-box;
+    }
+ 
+ /* Para celulares */
+    [class*="grade-"] {
+             width: 100%;
+    }
+
+@media only screen and (min-width: 0px) {
+    .diminuir{
+             width: 100%;
+             height: 65vh;
+             object-fit: cover;}
+    .text4{
+             position: absolute;
+             background-color: transparent;
+             color: #ffffff;
+             font-family: verdana;
+             font-size: 15px;
+             text-align: center;
+             width: 100%;
+             height:auto;
+             top: 37vh;
+             text-align: center;
+    }
+
+    .texto{
+             position: absolute;
+             background-color:transparent;        
+             color: #ffffff;
+             font-family: verdana;
+             font-size: 30px;
+             width: 100%;
+             height: auto;
+             margin: 20px 0px;
+             top: 30vh;
+             text-align: center;
+    }
+ 
+    #descriçao{
+             margin: 50px 20px ;
+             margin-right: 20px; 
+             width: auto;
+             height: auto; 
+             display: block;
+             overflow: hidden;
+    }
+                  
+    #autor{
+             margin: 50px 20px 80px;
+             margin-right: 20px;
+             width: auto;
+             height: auto;
+             display: block;
+             overflow: hidden;
+    }
+    .a{
+             align-items: center;
+             margin:0px 0px;
+             width: 100%;
+             height: auto;
+    }
+    
+    .ab{
+             font-family: verdana;
+             font-size: 18px;
+             margin:0px 0px;
+             text-align: justify;
+    }
+      
+    .titulo{
+             font-family: verdana;
+             font-size: 35px; 
+             text-align: center;
+    }
+    #parte1{
+             background:none;
+             width: 35%;
+             height: auto;
+             float: left;
+             margin: 25px 10px;
+    }
+    #parte2{
+             background:none;
+             float: right;
+             width:55%;
+             height: auto;
+             margin: 13px 0px;
+             margin-right: 10px;
+    }
+      
+    .text2{
+             color:rgb(255, 255, 255);
+             font-family: verdana;
+             font-size: 15px;
+             width: 100%;
+             height: auto;
+             margin-right: auto;
+    }
+    
+    .text3{
+             color: white;
+             font-family: verdana;
+             font-size: 13px;
+             text-align: right;
+             width: 100%;
+             height: auto;
+             margin-left: auto;
+    }
+}
+@media only screen and (min-width: 600px) {
+  /* Para tablets: */
+  .grade-t-1 {width: 8.33%;}
+  .grade-t-2 {width: 16.66%;}
+  .grade-t-3 {width: 25%;}
+  .grade-t-4 {width: 33.33%;}
+  .grade-t-5 {width: 41.66%;}
+  .grade-t-6 {width: 50%;}
+  .grade-t-7 {width: 58.33%;}
+  .grade-t-8 {width: 66.66%;}
+  .grade-t-9 {width: 75%;}
+  .grade-t-10 {width: 83.33%;}
+  .grade-t-11 {width: 91.66%;}
+  .grade-t-12 {width: 100%;}
+  
+    .texto{
+             position: absolute;
+             background-color:transparent;        
+             color: #ffffff;
+             font-family: verdana;
+             font-size: 35px;
+             width: 100%;
+             height: auto;
+             margin: 20px 0px;
+             top: 32vh;
+             text-align: center;
+    }
+  
+    .text4{
+             position: absolute;
+             background-color: transparent;
+             color: #ffffff;
+             font-family: verdana;
+             font-size: 15px;
+             text-align: center;
+             width: 100%;
+             height:auto;
+             top: 40vh;
+             text-align: center;
+    }
+    .diminuir{
+             width: 100%;
+             height: 70vh;
+             object-fit: cover;
+    }
+            
+    .titulo{
+             font-family: verdana;
+             font-size: 35px; 
+             text-align: center;
+    }
+        
+    #descriçao{
+             margin: 50px 60px ;
+             margin-right: 60px;
+             width: auto;
+             height: auto;
+             display: block;
+             overflow: hidden;
+    }
+                  
+    #autor{
+             margin: 50px 80px 100px;
+             margin-right: 80px;
+             width: auto;
+             height: auto;
+             display: block;
+             overflow: hidden;
+    }
+    .a{
+             align-items: center;
+             margin:0px 0px;
+             width: 100%;
+             height: auto;
+    }
+    
+    .ab{
+             font-family: verdana;
+             font-size: 15px;
+             margin:0px 0px;
+             text-align: justify;
+    }
+
+    #parte1{
+             background:none;
+             width: 35%;
+             height: auto;
+             float: left;
+             margin: 23px 10px;
+
+    }
+
+    #parte2{
+             background:none;
+             float: right;
+             width:55%;
+             height: auto;
+             margin: 22px 0px;
+             margin-right: 10px;
+    }
+
+    .text2{
+             color:rgb(255, 255, 255);
+             font-family: verdana;
+             font-size: 17px;
+             width: 100%;
+             height: auto;
+             margin-right: auto;
+
+    }
+    .text3{
+             color: white;
+             font-family: verdana;
+             font-size: 13px;
+             text-align: right;
+             width: 100%;
+             height: auto;
+             margin-left: auto;     
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Para desktop: */
+ 
+.grade-1 {width: 8.33%;}
+.grade-2 {width: 16.66%;}
+.grade-3 {width: 25%;}
+.grade-4 {width: 33.33%;}
+.grade-5 {width: 41.66%;}
+.grade-6 {width: 50%;}
+.grade-7 {width: 58.33%;}
+.grade-8 {width: 66.66%;}
+.grade-9 {width: 75%;}
+.grade-10 {width: 83.33%;}
+.grade-11 {width: 91.66%;}
+.grade-12 {width: 100%;}
+    
+    .texto{
+             position: absolute;
+             background-color:transparent;        
+             color: #ffffff;
+             font-family: verdana;
+             font-size: 60px;
+             width: 100%;
+             height: auto;
+             margin: 20px 0px;
+             top: 45vh;
+             text-align: center;
+    }
+                  
+    .text4{
+             position: absolute;
+             background-color: transparent;
+             color: #ffffff;
+             font-family: verdana;
+             font-size: 30px;
+             text-align: center;
+             width: 100%;
+             height:auto;
+             top: 55vh;
+             text-align: center;
+    }
+
+    .diminuir{
+             width: 100%;
+             height: 100vh;
+             object-fit: cover;
+    }   
+             
+    .titulo{
+             font-family: verdana;
+             font-size: 45px; 
+             text-align: center;
+    }
+    
+    #descriçao{
+             margin: 50px 60px ;
+             margin-right: 60px;
+             width: auto;
+             height: auto;
+             display: block;
+             overflow: hidden;
+    }
+    
+    #autor{
+             margin: 50px 80px 100px;
+             margin-right: 80px;
+             width: auto;
+             height: auto;
+             display: block;
+             overflow: hidden;
+    }
+    
+    .a{
+             align-items: center;
+             margin:0px 0px;
+             width: 100%;
+             height: auto;
+    }
+    
+    .ab{
+             font-family: verdana;
+             font-size: 20px;
+             margin:0px 0px;
+             text-align: justify;
+    }
+    
+    #parte1{
+             background:none;
+             width: 40%;
+             height: auto;
+             float: left;
+             margin: 18px 10px;
+    }
+      
+    #parte2{
+             background:none;
+             float: right;
+             width:45%;
+             height: auto;
+             margin: 17px 0px;
+             margin-right: 10px;
+    }
+    
+    .text2{
+             color:rgb(255, 255, 255);
+             font-family: verdana;
+             font-size: 20px;
+             width: 100%;
+             height: auto;
+             margin-right: auto;
+    }
+    
+    .text3{
+             color: white;
+             font-family: verdana;
+             font-size: 16px;
+             text-align: right;
+             width: 100%;
+             height: auto;
+             margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 1017px) {
+    /* Para descktops de 13" */
+
+    #descriçao{
+             margin: 50px 80px;
+             width: 38%;
+             height: auto;
+             float: left;
+             display: block;
+             overflow: hidden;
+    }
+
+    #autor{
+             margin: 50px 0px 100px;
+             margin-right: 80px;
+             width: 38%;
+             height: auto;
+             float: right;
+             display: block;
+             overflow: hidden;
+    }
+    
+    .ab{
+             font-family: verdana;
+             font-size: 20px;
+             margin:0px 0px;
+             text-align: left;
+    }
+    
+    .a{
+             align-items: center;
+             margin:0px 0px;
+             width: 100%;
+             height: auto;
+    }
+    
+    #parte2{
+             background:none;
+             float: right;
+             width:40%;
+             height: auto;
+             margin: 17px 0px;
+             margin-right: 10px;
+    }
+}
+</Style>
+</head>
+ 
+<body>
+  
+    <div id="cabeçalho" class="grade-12 grade-t-12">
+        <header class="grade-12 grade-t-12">   
+            <nav class= "grade-13">   
+                <input class="button" type="button" value="OUÇA AGORA" onclick="arrival()">
+            </nav>
+        </header>
+    </div>
+   
+    <div id="principal">
+        <img class="diminuir" src="https://i.ytimg.com/vi/Y9Pac7nAEhg/maxresdefault.jpg" alt="Pantera Negra">
+            <h1 class="texto">ARRIVAL TO EARTH</h1>
+                <p class="text4">The best song in the Transformers saga</p>
+            </div>
+   
+    <div id="titulo"> 
+        <h1 class="titulo">Steve Jablonsky</h1>
+    </div>
+
+    <div id="descriçao">
+        <p class ="ab">
+            Essa música "Arrival to Earth" que em português signfica "Chegada a Terra" é completamente atemporal, 
+                criada em 2007 pelo Steve Jablonsky para o filme Transformes 1, que lhe rendeu o prêmio BMI Film Music Award em 2008 por
+                essa música. <br> 
+                <br>    
+                Uma música composta por diversos instrumentos músicais e uma armonia perfeita, uma obra de arte que 
+                ficará marcada neste século. </p>
+            </div>
+    
+    <div id="autor">
+        <img class = "a" src="https://cdns-images.dzcdn.net/images/artist/0fa61d9c0bca4741a4e752a95b405784/500x500.jpg" alt="Steve Jablosky">
+    </div>
+   
+    <div id="rodape">
+        <footer >
+            <div id="parte1">
+               <p class="text2">© Optimus Prime</p> 
+            </div>      
+       
+            <div id="parte2"> 
+               <p class="text3">
+             "Sempre que você olhar para as estrelas, pense em uma delas como minha alma."
+            </p>
+            </div>     
+        </footer>
+    </div>
+    
+</div>
+   
+<style>
+             #tudo{
+                  width: 100%;
+             }
+             #cabeçalho{
+                  float: left;
+                  height: auto;   
+                  background: black
+             }
+             header{  
+                  background-color: black;
+                  opacity: 100%;
+                  color: silver;
+                  position: fixed;
+                  z-index: 9;
+                  display: block;
+                  overflow: hidden;
+             }
+             header nav{
+                  display:flex;
+                  justify-content: center;
+                  margin: 2.5vh 0px;
+             }
+             .button{ 
+                  border-radius: 50px;
+                  border: none;
+                  font-size: 20px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: bold;
+                  color: rgb(255, 255, 255);
+                  background-color: #1ae61a;
+                  padding: 1vh 2vh;
+                  cursor:pointer;
+                  outline:none;
+                  float: left;      
+             }
+             .button:hover{
+                  box-shadow: 0px 0px 10px rgb(0, 255, 0);
+             }
+             .button:active{
+                  transform: translateY(3px);  
+             }
+             #titulo{
+                  width: 100%;
+                  height: auto;
+                  margin: 40px 0px; 
+                  background: none;   
+             }
+             #rodape{
+                  clear: both;
+                  width: 100%;
+                  background: black;
+                  height: 100px;
+                  overflow: hidden;        
+             }
+             body{
+                  margin: 0px;
+                  padding: 0px;
+             }
+             .diminuir{
+                  filter: contrast(100%) brightness(70%) grayscale(50%) saturate(50%);
+             }
+</style>
+    <script>
+           function arrival(){
+                window.location.assign("https://www.youtube.com/watch?v=h2TSx1VB-AI")
+           }
+    </script>
+</body>
+</html>
